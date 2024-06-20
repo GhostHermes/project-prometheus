@@ -4,6 +4,10 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Welcome to Project Prometheus API"})
+
 class HealthCheck(Resource):
     def get(self):
         return jsonify({"status": "healthy"})
