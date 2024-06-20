@@ -1,5 +1,6 @@
 # Web framework
 Flask==2.0.1
+Werkzeug==2.0.1
 
 # Database
 SQLAlchemy==1.4.23
