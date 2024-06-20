@@ -12,28 +12,30 @@ Initial Development
 - Set up GitHub repository and project board
 - Created initial project structure and documentation
 - Set up development environment
+- Defined initial API endpoints
 
 ## Current Task
-- Setting up development environment (completed)
+- Define initial API endpoints (completed)
 
 ## Next Tasks
-- Define initial API endpoints
 - Design database schema
 - Implement basic user authentication
+- Develop frontend skeleton
 
 ## Open Issues/Challenges
-- None at the moment
+- Need to implement actual data storage and retrieval for API endpoints
 
 ## Project Board Status
 - Backlog: 6 items
-- Ready: 4 items
-- In Progress: 1 item (Set up development environment)
-- Review: 0 items
-- Done: 1 item (Create GitHub repository structure)
+- Ready: 3 items
+- In Progress: 0 items
+- Review: 1 item (Define initial API endpoints)
+- Done: 2 items (Create GitHub repository structure, Set up development environment)
 
 ## Recent Code Changes
 - Initial project setup: README, contributing guidelines, issue/PR templates, and directory structure
 - Set up virtual environment and requirements.txt
+- Created initial API structure with endpoints for communes, assets, and projects
 
 ## Environment Setup
 - Python version: 3.8+ (verify with `python --version`)
@@ -41,9 +43,10 @@ Initial Development
 
 ## Notes for AI Assistant
 - Continue to provide guidance on best practices for Flask application structure and API design
+- Consider suggesting testing strategies for the API endpoints
 
 ## Additional Context
-The project is in its early stages, focusing on setting up the foundational structure and tools for development.
+The project now has a basic API structure in place, which will serve as the foundation for building out the platform's core functionality.
 
 To start a new conversation:
 1. Update this document
