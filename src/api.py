@@ -1,8 +1,16 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from models import Base, Commune, User, Asset, Project
 
 app = Flask(__name__)
 api = Api(app)
+
+# Setup database connection
+engine = create_engine('sqlite:///prometheus.db')
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
 
 @app.route('/')
 def home():
