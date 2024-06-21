@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Commune, User, Asset, Project
 from sqlalchemy.exc import IntegrityError
+from datetime import datetime
 
 app = Flask(__name__)
 api = Api(app)
@@ -337,8 +338,8 @@ class ProjectResource(Resource):
         new_project = Project(
             name=data['name'],
             description=data.get('description', ''),
-            start_date=data.get('start_date'),
-            end_date=data.get('end_date'),
+            start_date=datetime.fromisoformat(data['start_date']) if data.get('start_date') else None,
+            end_date=datetime.fromisoformat(data['end_date']) if data.get('end_date') else None,
             status=data.get('status'),
             commune_id=data.get('commune_id')
         )
@@ -373,8 +374,8 @@ class ProjectResource(Resource):
             
             project.name = data.get('name', project.name)
             project.description = data.get('description', project.description)
-            project.start_date = data.get('start_date', project.start_date)
-            project.end_date = data.get('end_date', project.end_date)
+            project.start_date = datetime.fromisoformat(data['start_date']) if data.get('start_date') else project.start_date
+            project.end_date = datetime.fromisoformat(data['end_date']) if data.get('end_date') else project.end_date
             project.status = data.get('status', project.status)
             project.commune_id = data.get('commune_id', project.commune_id)
             

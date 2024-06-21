@@ -16,12 +16,12 @@ Initial Development
 - Designed and implemented database schema
 - Implemented CRUD operations for Commune entity
 - Fixed JSON serialization issue in API responses
+- Implemented CRUD operations for User entity
 
 ## Current Task
-- Implement data storage and retrieval in API endpoints (completed for Commune entity)
+- Implement CRUD operations for Asset and Project entities
 
 ## Next Tasks
-- Implement CRUD operations for User, Asset, and Project entities
 - Implement basic user authentication
 - Develop frontend skeleton
 - Add input validation and error handling
@@ -32,28 +32,27 @@ Initial Development
 - Asset and Project endpoints still return placeholder messages
 
 ## Project Board Status
-- Backlog: 3 items
+- Backlog: 2 items
 - Ready: 2 items
-- In Progress: 0 items
-- Review: 1 item (Implement CRUD operations for Commune entity)
-- Done: 5 items (Create GitHub repository structure, Set up development environment, Define initial API endpoints, Design database schema, Implement data storage and retrieval for Commune entity)
+- In Progress: 1 item (Implement CRUD operations for Asset and Project entities)
+- Review: 1 item (Implement CRUD operations for User entity)
+- Done: 6 items (Create GitHub repository structure, Set up development environment, Define initial API endpoints, Design database schema, Implement data storage and retrieval for Commune entity, Implement CRUD operations for User entity)
 
 ## Recent Code Changes
-- Implemented CRUD operations for Commune entity in api.py
-- Integrated SQLAlchemy session management in API endpoints
-- Fixed JSON serialization issue in API responses
+- Implemented CRUD operations for User entity in api.py
+- Updated API routing to include User endpoints
 
 ## Environment Setup
 - Python version: 3.8+ (verify with `python --version`)
 - Key dependencies: Flask 2.0.1, SQLAlchemy 1.4.23, Flask-RESTful 0.3.9, Werkzeug 2.0.1
 
 ## Notes for AI Assistant
-- Provide guidance on implementing CRUD operations for remaining entities
+- Provide guidance on implementing CRUD operations for Asset and Project entities
 - Suggest best practices for error handling and input validation in Flask applications
 - Consider discussing strategies for testing API endpoints
 
 ## Additional Context
-The project now has a functional API with CRUD operations for the Commune entity. The next steps involve extending this functionality to other entities and improving overall robustness and security.
+The project now has a functional API with CRUD operations for Commune and User entities. The next steps involve extending this functionality to Asset and Project entities, then moving on to authentication and security features.
 
 To start a new conversation:
 1. Update this document
