@@ -1,6 +1,6 @@
 # Project Prometheus Status Document
 
-Last Updated: [Current Date]
+Last Updated: June 20, 2024
 
 ## Project Overview
 Project Prometheus is a decentralized platform for venture communes, focusing on communal ownership and democratic control of productive assets.
@@ -15,29 +15,33 @@ Initial Development
 - Defined initial API endpoints
 - Designed and implemented database schema
 - Implemented CRUD operations for Commune entity
+- Fixed JSON serialization issue in API responses
 
 ## Current Task
-- Implement data storage and retrieval in API endpoints (in progress)
+- Implement data storage and retrieval in API endpoints (completed for Commune entity)
 
 ## Next Tasks
 - Implement CRUD operations for User, Asset, and Project entities
 - Implement basic user authentication
 - Develop frontend skeleton
+- Add input validation and error handling
 
 ## Open Issues/Challenges
 - Need to implement proper error handling and input validation in API endpoints
 - Consider implementing data validation and sanitization
+- Asset and Project endpoints still return placeholder messages
 
 ## Project Board Status
-- Backlog: 4 items
+- Backlog: 3 items
 - Ready: 2 items
-- In Progress: 1 item (Implement data storage and retrieval in API endpoints)
+- In Progress: 0 items
 - Review: 1 item (Implement CRUD operations for Commune entity)
-- Done: 4 items (Create GitHub repository structure, Set up development environment, Define initial API endpoints, Design database schema)
+- Done: 5 items (Create GitHub repository structure, Set up development environment, Define initial API endpoints, Design database schema, Implement data storage and retrieval for Commune entity)
 
 ## Recent Code Changes
 - Implemented CRUD operations for Commune entity in api.py
 - Integrated SQLAlchemy session management in API endpoints
+- Fixed JSON serialization issue in API responses
 
 ## Environment Setup
 - Python version: 3.8+ (verify with `python --version`)
