@@ -3,61 +3,56 @@
 Last Updated: June 20, 2024
 
 ## Project Overview
-Project Prometheus is a decentralized platform for venture communes, focusing on communal ownership and democratic control of productive assets.
+Project Prometheus is a decentralized platform for venture communes, focusing on communal ownership, democratic control of productive assets, and horizontal distribution of power. It utilizes blockchain and peer-to-peer technologies to create a truly decentralized ecosystem.
 
 ## Current Phase
-Initial Development
+Architectural Redesign and Initial Implementation
 
 ## Recent Accomplishments
-- Set up GitHub repository and project board
-- Created initial project structure and documentation
-- Set up development environment
-- Defined initial API endpoints
-- Designed and implemented database schema
-- Implemented CRUD operations for Commune entity
-- Fixed JSON serialization issue in API responses
-- Implemented CRUD operations for User entity
-- Implemented CRUD operations for Project entity
-- Fixed date handling for Project entity
-- Implemented CRUD operations for Asset entity
+- Pivoted to a decentralized, peer-to-peer architecture
+- Researched and selected core technologies for DID, P2P networking, and blockchain integration
+- Updated project documentation to reflect new direction
 
 ## Current Task
-- Review and refine implemented CRUD operations
+- Set up basic P2P network with DID capabilities
 
 ## Next Tasks
-- Implement basic user authentication
-- Develop frontend skeleton
-- Add comprehensive input validation and error handling
-- Implement relationships between entities (e.g., linking assets to communes, projects to communes)
-- Implement search and filtering capabilities for entities
+- Implement distributed storage solution (e.g., IPFS)
+- Develop smart contracts for core functionalities
+- Design and implement federation protocols
+- Create DApp user interface
 
 ## Open Issues/Challenges
-- Need to implement proper error handling and input validation in API endpoints
-- Consider implementing data validation and sanitization
-- Implement proper relationships between entities
+- Selecting the most appropriate blockchain platform for our needs
+- Ensuring scalability and performance in a fully decentralized system
+- Developing user-friendly interfaces for complex decentralized interactions
+- Ensuring compliance with regulations in a decentralized context
 
 ## Project Board Status
-- Backlog: 3 items
-- Ready: 3 items
-- In Progress: 1 item (Review and refine implemented CRUD operations)
-- Review: 1 item (Implement CRUD operations for Asset entity)
-- Done: 9 items (Create GitHub repository structure, Set up development environment, Define initial API endpoints, Design database schema, Implement data storage and retrieval for Commune entity, Implement CRUD operations for User entity, Implement CRUD operations for Project entity, Fix date handling for Project entity, Implement CRUD operations for Asset entity)
+- Backlog: 5 items (Including long-term goals like advanced governance mechanisms)
+- Ready: 3 items (P2P network setup, DID implementation, Distributed storage integration)
+- In Progress: 1 item (Basic P2P network with DID capabilities)
+- Review: 1 item (Technology selection and architecture design)
+- Done: 2 items (Initial project setup, Pivot to decentralized architecture)
 
 ## Recent Code Changes
-- Implemented CRUD operations for Asset entity in api.py
-- Updated API routing to include Asset endpoints
+- Repository structure updated to accommodate new architecture
+- Initial P2P networking code implemented
 
 ## Environment Setup
-- Python version: 3.8+ (verify with `python --version`)
-- Key dependencies: Flask 2.0.1, SQLAlchemy 1.4.23, Flask-RESTful 0.3.9, Werkzeug 2.0.1
+- Core technologies: To be finalized, but likely including:
+  - Decentralized Identity (DID): Hyperledger Indy or uPort
+  - P2P Networking: libp2p
+  - Distributed Storage: IPFS
+  - Blockchain Platform: To be determined (e.g., Ethereum, Cosmos, or custom solution)
 
 ## Notes for AI Assistant
-- Suggest best practices for error handling and input validation in Flask applications
-- Consider discussing strategies for implementing user authentication
-- Provide guidance on implementing relationships between entities
+- Provide guidance on implementing DIDs and P2P networking
+- Suggest best practices for developing and testing decentralized applications
+- Research and compare different blockchain platforms suitable for our use case
 
 ## Additional Context
-The project now has a functional API with CRUD operations for all main entities (Commune, User, Project, and Asset). The next steps involve implementing relationships between entities, adding authentication and security features, and developing the frontend.
+The project has pivoted to a fully decentralized, peer-to-peer model to better align with its goals of horizontal power distribution. This shift will require significant changes in our approach to development, testing, and deployment, but will result in a system that truly embodies the principles of decentralized power and collective ownership.
 
 To start a new conversation:
 1. Update this document
