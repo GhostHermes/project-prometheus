@@ -5,6 +5,11 @@ from sqlalchemy.orm import sessionmaker
 from models import Base, Commune, User, Asset, Project
 from sqlalchemy.exc import IntegrityError
 from datetime import datetime
+from flask import request, jsonify
+from flask_restful import Resource
+from models import Asset
+from sqlalchemy.exc import IntegrityError
+
 
 app = Flask(__name__)
 api = Api(app)
